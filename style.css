@@ -232,6 +232,36 @@ header {
   z-index: 2;
 }
 
+.hero-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+  border: 4px solid #6c63ff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .hero-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-img {
+    width: 130px;
+    height: 130px;
+  }
+}
 .hero-content h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -271,13 +301,7 @@ header {
   background: #5a6268;
 }
 
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
+
 
 /* About, Projects, Skills, and Contact Sections */
 section {
