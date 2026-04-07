@@ -315,6 +315,23 @@ header {
     gap: 1rem;
     align-items: center;
   }
+  .menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 998;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
 
   .btn {
     width: 200px;
