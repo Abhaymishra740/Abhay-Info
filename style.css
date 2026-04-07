@@ -54,7 +54,16 @@ body {
   }
 }
 
-
+.hero-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+  border: 4px solid #00bcd4; /* optional stylish border */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
 
 .intro-heading {
   font-size: 2.5rem;
