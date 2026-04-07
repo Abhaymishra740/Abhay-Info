@@ -48,6 +48,4 @@ form.addEventListener("submit", async function (e) {
 });
 
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+document.getElementById("year").textContent = new Date().getFullYear();
