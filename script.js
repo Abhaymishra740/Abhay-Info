@@ -1,12 +1,18 @@
 // AOS animations
 AOS.init();
 
-// Hamburger menu
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const overlay = document.getElementById("menuOverlay");
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  overlay.classList.toggle("active");
+});
+
+overlay.addEventListener("click", () => {
+  navLinks.classList.remove("active");
+  overlay.classList.remove("active");
 });
 
 const form = document.getElementById("contact-form");
